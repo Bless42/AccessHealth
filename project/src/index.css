@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.emergency-button {
+  transition: transform 0.2s;
+}
+
+.emergency-button:hover {
+  transform: scale(1.05);
+}
+
+.emergency-button:active {
+  transform: scale(0.95);
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
